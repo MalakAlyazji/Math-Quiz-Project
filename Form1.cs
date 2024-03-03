@@ -594,5 +594,18 @@ namespace MathGameProject
         {
             playagain();
         }
+
+        private void txtresult_TextChanged(object sender, EventArgs e)
+        {
+            double i = 0;
+            if(double.TryParse(txtresult.Text,out i))
+            {
+                errorProvider2.SetError(txtresult, "");
+            }
+            else
+            {
+                errorProvider2.SetError(txtresult, "Only numbers!");
+            }
+        }
     }
 }

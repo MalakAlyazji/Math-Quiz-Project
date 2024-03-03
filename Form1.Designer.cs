@@ -112,6 +112,7 @@ namespace MathGameProject
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -129,6 +130,7 @@ namespace MathGameProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -565,6 +567,7 @@ namespace MathGameProject
             this.txtresult.Name = "txtresult";
             this.txtresult.Size = new System.Drawing.Size(95, 35);
             this.txtresult.TabIndex = 17;
+            this.txtresult.TextChanged += new System.EventHandler(this.txtresult_TextChanged);
             // 
             // lbop
             // 
@@ -1004,6 +1007,10 @@ namespace MathGameProject
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1034,6 +1041,7 @@ namespace MathGameProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1122,6 +1130,7 @@ namespace MathGameProject
         private System.Windows.Forms.Button btplay;
         private System.Windows.Forms.Label label16;
         public System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }
 
